@@ -1,8 +1,11 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
 import DarkModeSwitcher from "./DarkModeSwitcher";
+import DropdownNotification from "./DropdownNotification";
 
 function Header(props) {
+  // eslint-disable-next-line react/prop-types
   const { sidebarOpen, setSidebarOpen } = props;
   return (
     <header className="sticky top-0 z-999 flex w-full bg-white drop-shadow-1 dark:bg-boxdark dark:drop-shadow-none">
@@ -94,12 +97,12 @@ function Header(props) {
 
         <div className="flex items-center gap-3 2xsm:gap-7">
           <ul className="flex items-center gap-2 2xsm:gap-4">
-            {/* <!-- Dark Mode Toggler --> */}
+            {/*  Dark Mode Toggler */}
             <DarkModeSwitcher />
-            {/* <!-- Dark Mode Toggler --> */}
+            {/*  Dark Mode Toggler  */}
 
             {/* <!-- Notification Menu Area --> */}
-            {/* <DropdownNotification /> */}
+            <DropdownNotification />
             {/* <!-- Notification Menu Area --> */}
 
             {/* <!-- Chat Notification Area --> */}
