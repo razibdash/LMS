@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import DarkModeSwitcher from "./DarkModeSwitcher";
 
 function Header(props) {
   const { sidebarOpen, setSidebarOpen } = props;
@@ -94,7 +95,7 @@ function Header(props) {
         <div className="flex items-center gap-3 2xsm:gap-7">
           <ul className="flex items-center gap-2 2xsm:gap-4">
             {/* <!-- Dark Mode Toggler --> */}
-            {/* <DarkModeSwitcher /> */}
+            <DarkModeSwitcher />
             {/* <!-- Dark Mode Toggler --> */}
 
             {/* <!-- Notification Menu Area --> */}
