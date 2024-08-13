@@ -51,7 +51,8 @@ function Header(props) {
           {/* <!-- Hamburger Toggle BTN --> */}
 
           <Link className="block flex-shrink-0 lg:hidden" to="/">
-            <img src="https://images.app.goo.gl/RSRkzoAUFHHwRcBJ9" alt="Logo" />
+            {/* <img src="https://images.app.goo.gl/RSRkzoAUFHHwRcBJ9" alt="Logo" /> */}
+            <h1 className="text-stone-400 text-2xl">DevLms</h1>
           </Link>
         </div>
         <div className="hidden sm:block">

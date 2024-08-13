@@ -3,15 +3,10 @@ import { NavLink, useLocation } from "react-router-dom";
 import SidebarLinkGroup from "./SidebarLinkGroup";
 const Logo = "https://images.app.goo.gl/RSRkzoAUFHHwRcBJ9";
 
-// interface SidebarProps {
-//   sidebarOpen: boolean;
-//   setSidebarOpen: (arg: boolean) => void;
-// }
-
 const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   const location = useLocation();
   const { pathname } = location;
-
+  console.log(pathname);
   const trigger = useRef();
   const sidebar = useRef();
 
@@ -65,7 +60,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
         <NavLink to="/">
-          <img src={Logo} alt="Logo" />
+          {/* <img src={Logo} alt="Logo" /> */}
+          <h1 className="text-2xl text-slate-100">DevLms</h1>
         </NavLink>
 
         <button

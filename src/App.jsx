@@ -21,16 +21,7 @@ function App() {
     <Loader />
   ) : (
     <DefaultLayout>
-      {/* <Router>
-        <Route
-          path="/"
-          element={
-            <>
-              <Dashboard />
-            </>
-          }
-        />
-      </Router> */}
+      <Dashboard />
     </DefaultLayout>
   );
 }
