@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 import DropdownNotification from "./DropdownNotification";
+import UserProfile from "./UserProfile";
 
 function Header(props) {
   // eslint-disable-next-line react/prop-types
@@ -111,7 +112,7 @@ function Header(props) {
           </ul>
 
           {/* <!-- User Area --> */}
-          {/* <DropdownUser /> */}
+          <UserProfile />
           {/* <!-- User Area --> */}
         </div>
       </div>
